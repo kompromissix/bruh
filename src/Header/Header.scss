@@ -1,0 +1,57 @@
+$width: 100%;
+@mixin silly-links {
+    h1{
+        color: #1F3F68;
+        font-size: 64px;
+    }
+}
+
+Header{
+    width: $width;
+    height: 768px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to top, #98C3E8 , white 28%);
+    nav{
+        display: flex;
+        justify-content: space-between;
+        width: 1200px;
+        padding-top: 40px;
+    }
+    .header_div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 389px;
+        width: 550px;
+        padding-right: 360px;
+        z-index: 5;
+        padding-bottom: 190px;
+        @include silly-links;
+        p{
+            font-size: 16px;
+            color: #1F3F68;
+            opacity: 60%;
+
+        }
+        button{
+            background-color: #5A98D0;
+            color: white;
+            border: none;
+            width: 220px;
+            height: 56px;
+            border-radius: 10px;
+        }
+    }
+    .absolut_img{
+        position: absolute;
+        z-index: 1;
+        width: $width;
+        height: 768px;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+}
